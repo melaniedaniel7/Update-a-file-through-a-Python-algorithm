@@ -74,7 +74,7 @@ The `.write()` method writes string data to a specified file.
 💡You should use the `"w"` argument when you want to replace the contents of an existing file.
 
 <img src="Screenshot 2025-02-23 at 19.21.21.png" width="600" />
-<img src="" width="600" />
+<img src="Screenshot 2025-02-23 at 19.21.55.png" width="600" />
 
 ### Summary
 
