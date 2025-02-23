@@ -24,27 +24,32 @@ Then, I use a `with` statement to open it.
 The keyword `with` handles errors and manages external resources. 
 The `open()` function opens a file in Python.
 I use the variable `file` to store the file while I work with it inside the `with` statement.
+
 💡 `"r"` indicates that I want to read the file.
+
 💡 The `as` keyword assigns a variable that references another object. When you open a file using `with open()`, you must provide a variable that can store the file while you are within the `with` statement. You can do this through the keyword `as` followed by this variable name. 
+
+<img src="Screenshot 2025-02-23 at 17.40.45.png" width="600" />
+
+### Read the file contents
+Next, I use the `.read()` method to convert the contents of the allow list file into a string so that I can read them.
+The `.read()` method 
+I store this string in a variable called `ip_addresses`.
 
 <img src="" width="600" />
 
 Describe the Python syntax, functions, and keywords you need to accomplish this.
-Details on using a with statement and the open() function in your algorithm
-
-### Read the file contents
-Next, use the .read() method to convert the contents of the allow list file into a string so that you can read them. Store this string in a variable called ip_addresses.
-
-<img src="" width="600" />
-
-Describe the Python syntax, functions, and keywords you need to accomplish this in the Read the file contents section of the Algorithm for file updates in Python template.
+Details on using the .read() and .write() methods in your algorithm
 
 ### Convert the string into a list
-In order to remove individual IP addresses from the allow list, the IP addresses need to be in a list format. Therefore, use the .split() method to convert the ip_addresses string into a list.
+In order to remove individual IP addresses from the allow list, the IP addresses need to be in a list format. 
+Therefore, I use the `.split()` method to convert the `ip_addresses` string into a list.
+The `.split()` method ...
 
 <img src="" width="600" />
 
-Describe the Python syntax, functions, and keywords you need to accomplish this in the Convert the string into a list section of the Algorithm for file updates in Python template.
+Describe the Python syntax, functions, and keywords you need to accomplish this.
+Details on using the .split() method in your algorithm
 
 ### Iterate through the remove list
 A second list called remove_list contains all of the IP addresses that should be removed from the ip_addresses list. Set up the header of a for loop that will iterate through the remove_list. Use element as the loop variable.
@@ -75,10 +80,6 @@ Describe the Python syntax, functions, and keywords you need to accomplish this 
 
 In the Summary section, provide a short summary of the algorithm by highlighting its main components. Write four to six sentences.
 
-
-- Details on using a with statement and the open() function in your algorithm
-- Details on using the .read() and .write() methods in your algorithm
-- Details on using the .split() method in your algorithm
 - Details on using a for loop in your algorithm
 - Details on using the .remove() method in your algorithm
 
