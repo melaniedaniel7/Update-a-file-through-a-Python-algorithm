@@ -52,19 +52,16 @@ I set up the header of a `for` loop that will iterate through the `remove_list`.
 The `for` loop is an iterative statement that iterates through the IP addresses.
 I use `element` as the loop variable.
 
-<img src="" width="600" />
+<img src="Screenshot 2025-02-23 at 19.05.06.png" width="600" />
 
 ### Remove IP addresses that are on the remove list
 In the body of my iterative statement, I add code that will remove all the IP addresses from the allow list that are also on the remove list. 
-First, I create a conditional that evaluates if the loop variable element is part of the `ip_addresses` list. 
-Then, within that conditional, I apply the `.remove()` method to the `ip_addresses` list and remove the IP addresses identified in the loop variable `element`. 
+First, I create a conditional that evaluates if the loop variable `element` is part of the `ip_addresses` list. 
+Then, within that conditional, I apply the `.remove()` method to the `ip_addresses` list and remove the IP addresses identified in the loop variable `element`.
+The `.remove()` method is used to remove an element, which in this case is an IP address from the `remove_list`.
+💡Applying the .remove() method in this way is possible because there are no duplicates in the ip_addresses list.
 
 <img src="" width="600" />
-
-Describe the Python syntax, functions, and keywords you need to accomplish this in the Remove IP addresses that are on the remove list section of the Algorithm for file updates in Python template.
-
-In addition, include a sentence that explains that applying the .remove() method in this way is possible because there are no duplicates in the ip_addresses list.
-Details on using the .remove() method in your algorithm
 
 ### Update the file with the revised list of IP addresses
 Now that I have removed these IP addresses from the `ip_address` variable, I can complete the algorithm by updating the file with this revised list. 
