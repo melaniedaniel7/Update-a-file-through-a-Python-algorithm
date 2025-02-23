@@ -18,12 +18,14 @@ is controlling access to restricted content.
 Below are the steps I followed to create this algorithm.
 
 ### Open the file that contains the allow list
-The file that I want to open is called '"allow_list.txt"'. 
-I start by assigning a string containing this file name to the 'import_file' variable. 
-Then, I use a 'with' statement to open it.
-The keyword 'with' handles errors and manages external resources. 
-The 'open()' function opens a file in Python.
-I use the variable 'file' to store the file while I work with it inside the 'with' statement.
+The file that I want to open is called `"allow_list.txt"`. 
+I start by assigning a string containing this file name to the `import_file` variable. 
+Then, I use a `with` statement to open it.
+The keyword `with` handles errors and manages external resources. 
+The `open()` function opens a file in Python.
+I use the variable `file` to store the file while I work with it inside the `with` statement.
+💡 `"r"` indicates that I want to read the file.
+💡 The `as` keyword assigns a variable that references another object. When you open a file using `with open()`, you must provide a variable that can store the file while you are within the `with` statement. You can do this through the keyword `as` followed by this variable name. 
 
 <img src="" width="600" />
 
