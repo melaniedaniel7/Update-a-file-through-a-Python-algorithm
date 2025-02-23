@@ -33,18 +33,16 @@ I use the variable `file` to store the file while I work with it inside the `wit
 
 ### Read the file contents
 Next, I use the `.read()` method to convert the contents of the allow list file into a string so that I can read them.
-The `.read()` method 
+The `.read()` method converts files into strings. 
+This is necessary in order to use and display the contents of the file that was read.
 I store this string in a variable called `ip_addresses`.
 
-<img src="" width="600" />
-
-Describe the Python syntax, functions, and keywords you need to accomplish this.
-Details on using the .read() and .write() methods in your algorithm
+<img src="Screenshot 2025-02-23 at 18.48.00.png" width="600" />
 
 ### Convert the string into a list
 In order to remove individual IP addresses from the allow list, the IP addresses need to be in a list format. 
 Therefore, I use the `.split()` method to convert the `ip_addresses` string into a list.
-The `.split()` method ...
+The `.split()` method converts a string into a list. It separates the string based on a specified character that's passed into `.split()` as an argument. 
 
 <img src="" width="600" />
 
@@ -52,25 +50,35 @@ Describe the Python syntax, functions, and keywords you need to accomplish this.
 Details on using the .split() method in your algorithm
 
 ### Iterate through the remove list
-A second list called remove_list contains all of the IP addresses that should be removed from the ip_addresses list. Set up the header of a for loop that will iterate through the remove_list. Use element as the loop variable.
+A second list called `remove_list` contains all of the IP addresses that should be removed from the `ip_addresses` list. 
+I set up the header of a for loop that will iterate through the `remove_list`. 
+I use `element` as the loop variable.
 
 <img src="" width="600" />
 
 Describe the Python syntax, functions, and keywords you need to accomplish this in the Iterate through the remove list section of the Algorithm for file updates in Python template.
+Details on using a for loop in your algorithm
 
 ### Remove IP addresses that are on the remove list
-In the body of your iterative statement, add code that will remove all the IP addresses from the allow list that are also on the remove list. First, create a conditional that evaluates if the loop variable element is part of the ip_addresses list. Then, within that conditional, apply the .remove() method to the ip_addresses list and remove the IP addresses identified in the loop variable element. 
+In the body of my iterative statement, I add code that will remove all the IP addresses from the allow list that are also on the remove list. 
+First, I create a conditional that evaluates if the loop variable element is part of the `ip_addresses` list. 
+Then, within that conditional, I apply the `.remove()` method to the `ip_addresses` list and remove the IP addresses identified in the loop variable `element`. 
 
 <img src="" width="600" />
 
 Describe the Python syntax, functions, and keywords you need to accomplish this in the Remove IP addresses that are on the remove list section of the Algorithm for file updates in Python template.
 
 In addition, include a sentence that explains that applying the .remove() method in this way is possible because there are no duplicates in the ip_addresses list.
+Details on using the .remove() method in your algorithm
 
 ### Update the file with the revised list of IP addresses
-Now that you have removed these IP addresses from the ip_address variable, you can complete the algorithm by updating the file with this revised list. To do this, you must first convert the ip_addresses list back into a string using the .join() method. Apply .join() to the string "\n" in order to separate the elements in the file by placing them on a new line.
+Now that I have removed these IP addresses from the `ip_address` variable, I can complete the algorithm by updating the file with this revised list. 
+To do this, I must first convert the `ip_addresses` list back into a string using the `.join()` method. 
+I apply `.join()` to the string "\n" in order to separate the elements in the file by placing them on a new line.
 
-Then, use another with statement and the .write() method to write over the file assigned to the import_file variable.
+Then, use another with statement and the `.write()` method to write over the file assigned to the `import_file` variable.
+The `.write()` method writes string data to a specified file. 
+💡You should use the `"w"` argument when you want to replace the contents of an existing file.
 
 <img src="" width="600" />
 
@@ -79,8 +87,4 @@ Describe the Python syntax, functions, and keywords you need to accomplish this 
 ### Summary
 
 In the Summary section, provide a short summary of the algorithm by highlighting its main components. Write four to six sentences.
-
-- Details on using a for loop in your algorithm
-- Details on using the .remove() method in your algorithm
-
 
