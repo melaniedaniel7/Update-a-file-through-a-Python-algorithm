@@ -61,20 +61,20 @@ Then, within that conditional, I apply the `.remove()` method to the `ip_address
 The `.remove()` method is used to remove an element, which in this case is an IP address from the `remove_list`.
 💡Applying the .remove() method in this way is possible because there are no duplicates in the ip_addresses list.
 
-<img src="" width="600" />
+<img src="Screenshot 2025-02-23 at 19.15.51.png" width="600" />
 
 ### Update the file with the revised list of IP addresses
 Now that I have removed these IP addresses from the `ip_address` variable, I can complete the algorithm by updating the file with this revised list. 
 To do this, I must first convert the `ip_addresses` list back into a string using the `.join()` method. 
-I apply `.join()` to the string "\n" in order to separate the elements in the file by placing them on a new line.
-
-Then, use another with statement and the `.write()` method to write over the file assigned to the `import_file` variable.
+I apply `.join()` to the string `"\n"` in order to separate the elements in the file by placing them on a new line.
+The `.join()` method concatenates the elements of an iterable into a string. 
+Put simply, this means that it converts a list back into a string.
+Then, use another `with` statement and the `.write()` method to write over the file assigned to the `import_file` variable.
 The `.write()` method writes string data to a specified file. 
 💡You should use the `"w"` argument when you want to replace the contents of an existing file.
 
 <img src="" width="600" />
-
-Describe the Python syntax, functions, and keywords you need to accomplish this in the Update the file with the revised list of IP addresses section of the Algorithm for file updates in Python template.
+<img src="" width="600" />
 
 ### Summary
 
