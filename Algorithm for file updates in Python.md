@@ -44,20 +44,15 @@ In order to remove individual IP addresses from the allow list, the IP addresses
 Therefore, I use the `.split()` method to convert the `ip_addresses` string into a list.
 The `.split()` method converts a string into a list. It separates the string based on a specified character that's passed into `.split()` as an argument. 
 
-<img src="" width="600" />
-
-Describe the Python syntax, functions, and keywords you need to accomplish this.
-Details on using the .split() method in your algorithm
+<img src="Screenshot 2025-02-23 at 19.01.23.png" width="600" />
 
 ### Iterate through the remove list
 A second list called `remove_list` contains all of the IP addresses that should be removed from the `ip_addresses` list. 
-I set up the header of a for loop that will iterate through the `remove_list`. 
+I set up the header of a `for` loop that will iterate through the `remove_list`. 
+The `for` loop is an iterative statement that iterates through the IP addresses.
 I use `element` as the loop variable.
 
 <img src="" width="600" />
-
-Describe the Python syntax, functions, and keywords you need to accomplish this in the Iterate through the remove list section of the Algorithm for file updates in Python template.
-Details on using a for loop in your algorithm
 
 ### Remove IP addresses that are on the remove list
 In the body of my iterative statement, I add code that will remove all the IP addresses from the allow list that are also on the remove list. 
