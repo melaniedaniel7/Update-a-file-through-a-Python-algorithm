@@ -3,7 +3,7 @@ This activity demonstrates my experience using Python to develop algorithms that
 
 Disclaimer:
 
-
+<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDg0ZzE0ajB6aXRvMHVwNHN2czYybmdjMWh3YWNraWUwNmYyZnFyNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/coxQHKASG60HrHtvkt/giphy.gif" width="400" />
 
 In this Pthon course I completed 10 labs. The scenario for this activity is Module 4 lab 2 and focuses on lab tasks 2 to 7.
 
