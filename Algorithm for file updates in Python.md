@@ -24,6 +24,7 @@ Then, I use a `with` statement to open it.
 The keyword `with` handles errors and manages external resources. 
 The `open()` function opens a file in Python.
 I use the variable `file` to store the file while I work with it inside the `with` statement.
+The purpose of opening the file is to allow me to access the IP addresses stored in the allow list file.
 
 💡 `"r"` indicates that I want to read the file.
 
@@ -36,6 +37,8 @@ Next, I use the `.read()` method to convert the contents of the allow list file 
 The `.read()` method converts files into strings. 
 This is necessary in order to use and display the contents of the file that was read.
 I store this string in a variable called `ip_addresses`.
+This code reads the contents of the `allow_list.txt` file in a string format
+that allows me to later use the string to organize and extract data in my Python program.
 
 <img src="Screenshot 2025-02-23 at 18.48.00.png" width="600" />
 
@@ -43,14 +46,17 @@ I store this string in a variable called `ip_addresses`.
 In order to remove individual IP addresses from the allow list, the IP addresses need to be in a list format. 
 Therefore, I use the `.split()` method to convert the `ip_addresses` string into a list.
 The `.split()` method converts a string into a list. It separates the string based on a specified character that's passed into `.split()` as an argument. 
+The purpose of spliting `ip_addresses` into a list is to make it easier to remove IP addresses from the allow list.
+To store the list I reassigned it back to the variable `ip_addresses`.
 
 <img src="Screenshot 2025-02-23 at 19.01.23.png" width="600" />
 
 ### Iterate through the remove list
 A second list called `remove_list` contains all of the IP addresses that should be removed from the `ip_addresses` list. 
 I set up the header of a `for` loop that will iterate through the `remove_list`. 
-The `for` loop is an iterative statement that iterates through the IP addresses.
-I use `element` as the loop variable.
+The `for` loop is an iterative statement that iterates through the IP addresses (in this scenario).
+I use `element` as the loop variable and the keyword `in`.
+The keyword `in` indicates to iterate through the sequence `ip_addresses` and assign each value to the loop variable element.
 
 <img src="Screenshot 2025-02-23 at 19.05.06.png" width="600" />
 
@@ -66,10 +72,11 @@ The `.remove()` method is used to remove an element, which in this case is an IP
 ### Update the file with the revised list of IP addresses
 Now that I have removed these IP addresses from the `ip_address` variable, I can complete the algorithm by updating the file with this revised list. 
 To do this, I must first convert the `ip_addresses` list back into a string using the `.join()` method. 
-I apply `.join()` to the string `"\n"` in order to separate the elements in the file by placing them on a new line.
+I apply `.join()` and `"\n"`to the string in order to separate the elements in the file by placing them on a new line.
 The `.join()` method concatenates the elements of an iterable into a string. 
 Put simply, this means that it converts a list back into a string.
-Then, use another `with` statement and the `.write()` method to write over the file assigned to the `import_file` variable.
+Then, I used another `with` statement and the `.write()` method to write over the file assigned to the `import_file` variable.
+This way, the restricted content will no longer be accessible to any IP addresses that were removed from the allow list.
 The `.write()` method writes string data to a specified file. 
 💡You should use the `"w"` argument when you want to replace the contents of an existing file.
 
@@ -77,6 +84,9 @@ The `.write()` method writes string data to a specified file.
 <img src="Screenshot 2025-02-23 at 19.21.55.png" width="600" />
 
 ### Summary
-
-In the Summary section, provide a short summary of the algorithm by highlighting its main components. Write four to six sentences.
+In this scenario I created an algorithm that removes unauthorized IP addresses identied in a `remove_list` variable from the `"allow_list.txt"` file of approved IP addresses.
+The algorithm opened the file, converting it to a string to be read, and then converting this string to a list stored in the variable `ip_addresses`. 
+I then iterated through the IP addresses in `remove_list` with a `for` loop.
+With each iteration, I evaluated if the element was part of the `ip_addresses` list. If it was, I applied the `.remove()` method to it to remove the element from `ip_addresses`. 
+Finally, I used the `.join()` method to convert the `ip_addresses` back into a string so that I could write over the contents of the `"allow_list.txt"` file with the revised list of IP addresses.
 
